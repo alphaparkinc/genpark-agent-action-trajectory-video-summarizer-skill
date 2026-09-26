@@ -1,0 +1,37 @@
+{
+  "name": "genpark-agent-action-trajectory-video-summarizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-frame GUI computer-use action trajectory summarizer detecting dead clicks, UI rendering latency stalls, and execution telemetry.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "vision-agent",
+  "tags": [
+    "action-trajectory",
+    "video-summarizer",
+    "dead-click-detector",
+    "computer-use",
+    "gui-telemetry"
+  ],
+  "inputs": {
+    "task_id": {
+      "type": "string",
+      "default": "task_browser_signup_881"
+    }
+  },
+  "outputs": {
+    "trajectory_summary_id": {
+      "type": "string"
+    },
+    "dead_clicks_count": {
+      "type": "integer"
+    },
+    "trajectory_fluidity_score": {
+      "type": "number"
+    },
+    "replay_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
